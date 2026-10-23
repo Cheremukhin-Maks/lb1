@@ -114,6 +114,7 @@ print("Task 4")
 
 my_collection1 = [5, 7, 10, 75, 15, 27, 7, 20, 17, 15, 77]
 my_collection2 = [77, 99, 101, 57, 342, 10, 5, 77, 993, 57, 99, 7]
+add_set = {5, 7, 10}
 
 set1 = set(my_collection1)
 set2 = set(my_collection2)
@@ -134,7 +135,9 @@ print("Симетрична різниця")
 print( sorted(set1 ^ set2))
 
 print("Відношення підмножини")
-print(set2.issubset(set1))
+print(f"Додаткова множина для перевірки на підмножину add_set: {add_set}")
+print(f"Перевірка чи є set2 підмножиною set1: {set2.issubset(set1)}")
+print(f"Перевірка чи є add_set підмножиною set1: {add_set.issubset(set1)}")
 
 print(" ")
 print("###############################################################")
